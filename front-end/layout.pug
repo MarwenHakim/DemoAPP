@@ -1,0 +1,49 @@
+html
+	head
+		title= title
+		link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous")
+		script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+
+		style(type="text/css").
+			.jumbotron {
+				padding: 4rem 2rem;
+				margin-bottom: 2rem;
+				background-color: var(--bs-dark);
+				color: var(--bs-white);
+				border-radius: .3rem;
+				
+			}
+			.aligned {
+				display: flex;
+				align-items: center;
+				margin: 0 0 0 100px;
+			}
+			.hp  {
+				float: right;    
+				margin: 0 0 0 100px;
+			}	
+
+	body.d-flex.flex-column.h-100
+		.jumbotron
+			.container
+			<div class="aligned">
+				<div class="hp">
+						img(src='./pictures/m.png' style='width:50%;height:50%;')
+				</div>
+				<div>
+						h1 DemoApp :
+						h2 Gestion des accès avec IBM Security Verify.
+						p Application de démonstration des types d'authentification à l'aide du flux de code d'autorisation.</br>Testez les flux SSO, MFA, Adaptive Access et le Passwordless (QRCode, Verify App, FIDO 2).
+				</div>
+
+			</div>
+				
+		.main.flex-shrink-0.mb-5
+			block content
+
+		footer.mt-auto.py-3.bg-dark.text-white
+			.container
+				.row
+					.col
+					
+						p.mb-0 Pour plus d'informations, visitez #[a(href='https://docs.verify.ibm.com/verify' title='IBM Security Verify Documentation Hub' target='_blank') IBM Documentation Hub].

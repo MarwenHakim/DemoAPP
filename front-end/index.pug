@@ -1,0 +1,12 @@
+extends layout.pug
+
+block content
+	.container.main
+	<div align="center">
+		a(href='/login').btn.btn-primary Connectez-vous !
+		</br></br>
+		p Vous pouvez vous authentifier à l'aide de vos nom d'utilisateur et mot de passe enregistrés dans IBM Security Verify.
+		img(src='./pictures/a.png')
+		</div>
+	if isAnonymous
+		p Vous êtes déconnecté avec succès.
